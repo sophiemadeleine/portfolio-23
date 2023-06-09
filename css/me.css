@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 2vw;
-    width: 200vh;
+    width: 100vw;
 }
 
 @media (max-width: 800px) {
@@ -15,7 +15,7 @@
 }
 
 .presentation img {
-    max-height: 40vw;
+    max-height: 40vh;
     width: auto;
 }
 
@@ -30,10 +30,10 @@
 .pudding {
     padding: 10vw 7vw 10vw 7vw;
     text-align: center;
-    background-image: url('../img/sketches/pudding.png');
+    /*background-image: url('../img/sketches/pudding.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     height: 100%;
     display: flex;
     align-items: center;
