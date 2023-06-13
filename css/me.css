@@ -8,15 +8,21 @@
     width: 100vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 450px) {
     .presentation {
         gap: 10vw;
     }
 }
 
 .presentation img {
-    max-height: 40vh;
+    max-height: 60vh;
     width: auto;
+}
+
+@media (max-width: 450px) {
+    .presentation img {
+        max-height: 40vh;
+    }
 }
 
 .memyself {
@@ -25,6 +31,12 @@
     align-items: center;
     justify-content: center;
 
+}
+
+@media (max-width: 450px) {
+    .memyself {
+        flex-direction: column;
+    }
 }
 
 .pudding {
@@ -49,17 +61,18 @@
     gap: 10vw;
 }
 
-.meContent {
-    display: flex;
-    flex-direction: column;
-    gap: 10vw;
-}
-
 .statement {
     display: flex;
     flex-direction: column;
     gap: 8vw;
     padding: 0 18vw 0 18vw;
+}
+
+@media (max-width: 450px) {
+    .statement {
+        gap: 12vw;
+        padding: 8vw 18vw 8vw 18vw;
+    }
 }
 
 /*- CV -*/
@@ -77,9 +90,51 @@
 
 }
 
+@media (max-width: 450px) {
+    .cv {
+        background-image: url('../img/sketches/questionMobile.png');
+        background-position: center 97%;
+        background-size: 20%;
+        padding: 8vw 18vw 20vw 18vw;
+    }
+}
+
+.timebeam {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+@media (max-width: 450px) {
+    .timebeam {
+        display: none;
+    }
+}
+
+.timebeamMobile {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .timebeamMobile {
+        display: flex;
+        gap: 2vw;
+        flex-direction: row;
+        margin-top: 2v;
+        margin-bottom: 8vh;
+    }
+}
+
 .cvLine {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 450px) {
+    .cvLine {
+        flex-direction: column;
+        gap: 2vw;
+    }
 }
 
 .step {
@@ -98,10 +153,22 @@
     max-width: 10vw;
 }
 
+@media (max-width: 450px) {
+    .step img {
+        max-width: 28vw;
+    }
+}
+
 .years {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+    .years {
+        flex-direction: column;
+    }
 }
 
 /*- Skills -*/
@@ -118,13 +185,28 @@
     place-items: center;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: auto auto;
-    grid-column-gap: 4vw;
     grid-row-gap: 2vw;
+    justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+    .logos {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 6vw;
+    }
 }
 
 .logos img {
     max-width: 6vw;
     max-height: 6vw;
+}
+
+@media (max-width: 450px) {
+    .logos img {
+        max-width: 12vw;
+        max-height: 12vw;
+    }
 }
 
 /*- TSC -*/
@@ -138,7 +220,16 @@
     background-size: 60%;
     background-position: center 90%;
     padding: 4vw 18vw 8vw 18vw;
-    gap: 6vw;
+    gap: 10vw;
+}
+
+@media (max-width: 450px) {
+    .tsc {
+        padding: 8vw 18vw 12vw 18vw;
+        background-image: url('../img/sketches/vidFrameMobile.png');
+        background-size: 90%;
+gap: 16vw;
+    }
 }
 
 .tsc a {
@@ -149,4 +240,10 @@
 
 .tsc img {
     max-width: 70%;
+}
+
+@media (max-width: 450px) {
+    .tsc img {
+        max-width: 100%
+    }
 }

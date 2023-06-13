@@ -26,6 +26,7 @@
 @media (max-width: 800px) {
     .intro {
         gap: 6vw;
+        max-height: 70vh;
     }
 }
 
@@ -51,7 +52,7 @@
 
 @media (max-width: 450px) {
     .threeD {
-        max-height: 45vw;
+        max-height: 20vh;
     }
 }
 
@@ -91,7 +92,7 @@
 
 @media (max-width: 450px) {
     .sophie .letters {
-        max-height: 30vw;
+        max-height: 20vw;
 
     }
 }

@@ -53,7 +53,7 @@
 
 @media (max-width: 800px) {
   .body h1 {
-    font-size: 16vw;
+    font-size: 10vw;
 
   }
 }
@@ -74,14 +74,14 @@
 /*- H3 Project Head -*/
 .body h3 {
   font-weight: bolder;
-  font-size: 4vw;
+  font-size: 3.2vw;
   padding-bottom: 1vw;
   margin-top: 1vw;
 }
 
 @media (max-width: 800px) {
   .body h3 {
-    font-size: 9vw;
+    font-size: 8vw;
     margin-block-end: 0vw;
 
   }
@@ -110,9 +110,16 @@
 .body cta2 {
   font-weight: 500;
   font-size: 1vw;
+  vertical-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .body cta2 {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 450px) {
   .body cta2 {
     font-size: 2.8vw;
   }
@@ -124,7 +131,13 @@
   font-size: 0.8vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .body l1 {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 450px) {
   .body l1 {
     font-size: 3vw;
   }
@@ -144,10 +157,17 @@
   line-height: 2vw;
 }
 
+@media (max-width: 1200px) {
+  .body p2 {
+    font-size: 1.6vw;
+    line-height: 3vw;
+  }
+}
+
 @media (max-width: 800px) {
   .body p2 {
     font-size: 4vw;
-    line-height: 5vw;
+    line-height: 6vw;
   }
 }
 
@@ -197,8 +217,7 @@
 
 
 .scroll {
-  max-height: 12vw;
-  height: 9vw;
+  max-height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -212,27 +231,26 @@
 
 @media (max-width: 800px) {
   .scroll {
-    max-height: 16vw;
+    height: 16vh;
 
   }
 }
 
 @media (max-width: 450px) {
   .scroll {
-    height: 30vw;
+    height: 12vh;
 
   }
 }
 
 .scrollArrow {
-  max-height: 9vw;
-  height: 3vw;
+  height: 8vh;
+  padding: 4vw;
 }
 
 @media (max-width: 800px) {
   .scrollArrow {
-    max-height: 12vw;
-    height: 8vw;
+    height: 6vh;
   }
 }
 
@@ -336,6 +354,20 @@
   }
 }
 
+.divide {
+  background-image: url('../img/sketches/bottomDivider.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20vw;
+  height: 10vh;
+}
+
+@media (max-width: 800px) {
+  .divide {
+width: 60vw;  
+height: 4vh;}
+}
+
 .pjTwo {
   display: flex;
   flex-direction: row;
@@ -429,7 +461,7 @@
   border-radius: 0 0 1vw 1vw;
   width: 100%;
   max-height: 20vh;
-  height: 16vh;
+  height: auto;
   transition: max-height 0.3s linear;
   box-sizing: border-box;
 }
@@ -484,6 +516,11 @@
   align-self: center;
 }
 
+@media (max-width: 450px) {
+  .divider {
+max-width: 24vw;  }
+}
+
 .video {
   background-image: url('../img/sketches/vidFrame.png');
   background-repeat: no-repeat;
@@ -494,16 +531,33 @@
   width: auto;
 }
 
+@media (max-width: 450px) {
+  .video {
+    background-image: url('../img/sketches/vidFrameMobile.png');
+  }
+}
+
 .star {
   position: relative;
   max-width: 4vw;
   align-self: center;
 }
 
+@media (max-width: 450px) {
+  .star {
+max-width: 12vw;  }
+}
+
 .lifeline {
   position: relative;
   max-width: 100%;
   align-self: center;
+}
+
+@media (max-width: 450px) {
+  .lifeline {
+max-width: 10%;
+  }
 }
 
 /*------- footer styles -------*/
@@ -635,21 +689,21 @@
 }
 
 .bottom img {
-  max-width: 2vw;
-  width: 2vw;
+  max-width: 3vw;
   max-height: 100%;
 }
 
 @media (max-width: 600px) {
-  .footer img {
+  .bottom img {
     max-width: 8vw;
   }
 }
 
+
 /*- Legal Links -*/
 .footer a {
   font-weight: 400;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
   font-kerning: 1px;
   font-family: 'Lato';
   color: #EDF1F5;
