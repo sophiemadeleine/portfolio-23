@@ -4,6 +4,7 @@
     "build": "babel src -d lib"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "netlify-cli": "^15.5.1"
   },
   "dependencies": {
