@@ -1,11 +1,24 @@
 {
 
   "name": "my-package",
+
   "scripts": {
+
     "build": "babel src -d lib"
+
   },
-  
+
   "devDependencies": {
+
     "netlify-cli": "^15.5.1"
+
+  },
+
+  "dependencies": {
+
+    "yarn": "^1.22.19"
+
   }
+
 }
+
