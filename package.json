@@ -10,7 +10,7 @@
   "dependencies": {
     "yarn": "^1.22.19"
   },
-  "version": "1.22.19",
+  "version": "1",
   "main": "script.js",
   "repository": "https://github.com/sophiemadeleine/portfolio-23.git",
   "author": "sophiemadleine <sophie.vollmer@aol.de>",
