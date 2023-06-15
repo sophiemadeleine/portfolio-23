@@ -1,19 +1,5 @@
 {
-  "name": "my-package",
-  "scripts": {
-    "build": "babel src -d lib",
-    "test": "jest"
-  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "netlify-cli": "^15.5.1"
-  },
-  "dependencies": {
-    "yarn": "^1.22.19"
-  },
-  "version": "1",
-  "main": "script.js",
-  "repository": "https://github.com/sophiemadeleine/portfolio-23.git",
-  "author": "sophiemadleine <sophie.vollmer@aol.de>",
-  "license": "MIT"
+    "netlify-cli": "^15.6.0"
+  }
 }
